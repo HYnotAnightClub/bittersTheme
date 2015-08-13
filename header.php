@@ -40,10 +40,8 @@
         ));?>
       </div> <!-- End of customizable navigation -->
     </nav> <!-- End of navigation bar -->
-<header class="hero">
 </div>
   
 
-  </div> <!-- End of container -->
-</header> <!-- End of header -->
+
 
