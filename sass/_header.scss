@@ -1,0 +1,29 @@
+a {
+	color: #F6F6F6;
+	text-decoration: none;
+}
+.main-nav-bar {
+	background: #222;
+	margin: 0;
+}
+.nav-logo {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	padding: 10px;
+}
+.navigation ul {
+	display: flex;
+	list-style: none;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 1.5em;
+	font-size: 1.8em;
+	justify-content: center;
+}
+.navigation li a {
+	padding: 0.2em 0.7em;
+	color: #fff;
+}
