@@ -12,7 +12,7 @@ function theme_setup() {
 	'width'         => 980, 
 	'flex-height'    => true,
 	// change the image height here for recommended stuff,
-	'height'        => 200,
+	'height'        => 600,
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 	);
 	/* This theme uses post thumbnails (aka "featured images")
