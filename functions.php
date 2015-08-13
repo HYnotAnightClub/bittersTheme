@@ -6,15 +6,30 @@
 if ( ! function_exists( 'theme_setup' ) ):
 
 function theme_setup() {
-	$args = array(
-	'flex-width'    => true,
-	// change the image width here for recommended stuff
-	'width'         => 980, 
-	'flex-height'    => true,
-	// change the image height here for recommended stuff,
-	'height'        => 600,
-	'default-image' => get_template_directory_uri() . '/images/header.jpg',
-	);
+	$defaults = array(
+		'default-image'          =>  get_template_directory_uri() . '/images/header.jpg',
+		'width'                  => 0,
+		'height'                 => 0,
+		'flex-height'            => false,
+		'flex-width'             => false,
+		'uploads'                => true,
+		'random-default'         => false,
+		'header-text'            => true,
+		'default-text-color'     => '',
+		'wp-head-callback'       => '',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+);
+
+	// $args = array(
+	// 'flex-width'    => true,
+	// // change the image width here for recommended stuff
+	// // 'width'         => 100, 
+	// 'flex-height'    => true,
+	// // change the image height here for recommended stuff,
+	// 'height'        => 400,
+	// 'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	// );
 	/* This theme uses post thumbnails (aka "featured images")
 	*  all images will be cropped to thumbnail size (below), as well as
 	*  a square size (also below). You can add more of your own crop
@@ -289,3 +304,7 @@ function bitters_customize_register( $wp_customize ) {
 }
 
 add_action( 'customize_register', 'bitters_customize_register' );
+
+//custom stuff
+
+

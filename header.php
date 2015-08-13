@@ -22,11 +22,6 @@
           <?php if ( get_theme_mod( 'bitters_logo' ) ) : ?>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">             
               <img src="<?php echo get_theme_mod( 'bitters_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-              <h1>
-                <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-                  <?php bloginfo( 'name' ); ?>
-                </a>
-              </h1>
             </a>
             <?php else : ?> <!-- NEED TO FIGURE OUT HOW TO HIDE TEXT IF IMAGE ISNT PRESENT -->
             <h1>
@@ -47,7 +42,9 @@
 <header class="hero">
 </div>
     <!-- THIS IS THE CUSTOM IMAGE -->
-    <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+    <div class="customBackground" style="background-image: url(<?php header_image(); ?>)">
+      <!-- <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
+    </div>
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
 
   </div> <!-- End of container -->

@@ -1,7 +1,7 @@
 /*
-* Theme Name: Bitters!
+* Theme Name: HackerYou Starter Theme
 * Theme URI: http://hackeryou.com;
-* Description: Change me?
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
 * Version: 1.0
 * Author: HackerYou
 * Author URI: http://hackeryou.com
@@ -224,9 +224,8 @@ a {
 
 .nav-logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  padding: 10px; }
+  padding: 2em;
+  max-height: 7em; }
 
 .navigation ul {
   display: flex;
@@ -449,8 +448,9 @@ body {
   width: 100%; }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto; }
+  max-width: 1600px;
+  width: 100%;
+  margin: 0; }
 
 .content {
   float: left;
