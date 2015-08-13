@@ -6,30 +6,28 @@
 if ( ! function_exists( 'theme_setup' ) ):
 
 function theme_setup() {
-	$defaults = array(
-		'default-image'          =>  get_template_directory_uri() . '/images/header.jpg',
-		'width'                  => 0,
-		'height'                 => 0,
-		'flex-height'            => false,
-		'flex-width'             => false,
-		'uploads'                => true,
-		'random-default'         => false,
-		'header-text'            => true,
-		'default-text-color'     => '',
-		'wp-head-callback'       => '',
-		'admin-head-callback'    => '',
-		'admin-preview-callback' => '',
-);
 
-	// $args = array(
-	// 'flex-width'    => true,
-	// // change the image width here for recommended stuff
-	// // 'width'         => 100, 
-	// 'flex-height'    => true,
-	// // change the image height here for recommended stuff,
-	// 'height'        => 400,
-	// 'default-image' => get_template_directory_uri() . '/images/header.jpg',
-	// );
+	$args = array(
+	'flex-width'    => true,
+	// change the image width here for recommended stuff
+	'width'         => 980, 
+	'flex-height'    => true,
+	// change the image height here for recommended stuff,
+	'height'        => 600,
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	);
+$defaults = array(
+	'default-color'          => '',
+	'default-image'          => '',
+	'default-repeat'         => '',
+	'default-position-x'     => '',
+	'default-attachment'     => '',
+	'wp-head-callback'       => '_custom_background_cb',
+	'admin-head-callback'    => '',
+	'admin-preview-callback' => ''
+	);
+	add_theme_support( 'custom-background', $defaults );
+>>>>>>> d13dfdba1f37d84490c006def16edd5d47e87750
 	/* This theme uses post thumbnails (aka "featured images")
 	*  all images will be cropped to thumbnail size (below), as well as
 	*  a square size (also below). You can add more of your own crop

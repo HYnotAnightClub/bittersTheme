@@ -8,13 +8,15 @@ a {
 }
 .nav-logo {
 	position: absolute;
+	top: 0;
+	left: 0;
 	padding: 2em;
-
-	img {
-		max-width: 150px;
-		max-height: 50px;
+	h1 {
+		font-size: 25px;
+		a {
+			font-size: 25px;
+		}
 	}
-
 }
 .navigation ul {
 	display: flex;
