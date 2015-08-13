@@ -196,6 +196,25 @@ function hackeryou_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
+	register_sidebar( array(
+		'name' => 'footer-widget-area',
+		'id' => 'footer-widget-area',
+		'description' => 'The footer widget area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+
+	register_sidebar( array(
+		'name' => 'body-widget-area',
+		'id' => 'body-widget-area',
+		'description' => 'The main page widget area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
