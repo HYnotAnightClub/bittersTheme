@@ -1,3 +1,16 @@
+/*
+* Theme Name: Bitters!
+* Theme URI: http://hackeryou.com;
+* Description: Change me?
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+/*
+=============================================================================
+                   Normalize, border box and clearfix
+=============================================================================
+*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -118,6 +131,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .clearfix:after {
   content: " ";
   visibility: hidden;
@@ -125,19 +143,76 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0;
   clear: both; }
 
-*, *:before, *:after {
-  box-sizing: border-box; }
+a {
+  color: #BA209B;
+  text-decoration: none; }
+  a:hover {
+    color: #D424B1; }
 
-/* End of set-up styles */
-body {
-  color: #F6F6F6;
-  font-family: 'Proxima Nova Condensed', 'sans-serif';
-  font-weight: light;
-  font-size: 10px;
-  width: 100%; }
+/* paragraphs */
+p {
+  line-height: 1.5; }
 
-img {
-  max-size: 100%; }
+/*blockquotes*/
+blockquote {
+  background: #F7F7F7;
+  margin: 0;
+  padding: 20px; }
+  blockquote p {
+    margin-top: 0; }
+
+/*tables*/
+table td {
+  padding: 10px; }
+
+table tr td:first {
+  padding-right: 0; }
+
+/*def lists*/
+dt {
+  font-weight: 600;
+  padding-bottom: 5px; }
+
+dd {
+  padding: 10px;
+  margin-left: 10px; }
+
+/*lists*/
+ul li, ol li {
+  padding: 3px; }
+
+/*PRE*/
+pre {
+  background: #F7F7F7;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc; }
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+.aligncenter {
+  text-align: center;
+  margin: 0 auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+img.alignleft {
+  padding-right: 5px; }
+
+img.alignright {
+  padding-left: 5px; }
+
+.clear {
+  width: 100%;
+  float: left;
+  clear: both; }
 
 a {
   color: #F6F6F6;
@@ -149,10 +224,9 @@ a {
 
 .nav-logo {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  font-size: 5em; }
+  top: 20px;
+  left: 20px;
+  padding: 10px; }
 
 .navigation ul {
   display: flex;
@@ -169,10 +243,219 @@ a {
   padding: 0.2em 0.7em;
   color: #fff; }
 
-.hero {
-  background: url(images/emptytable2.jpg);
-  image-size: cover;
-  height: 300px; }
-  .hero img {
-    width: 100%;
-    height: 500px; }
+.sidebar {
+  width: 30%;
+  float: left; }
+  .sidebar ul {
+    margin: 0;
+    padding: 0; }
+    .sidebar ul li {
+      list-style: none; }
+
+#comments .navigation {
+  padding: 0 0 18px; }
+
+h3#comments-title, h3#reply-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0; }
+
+h3#comments-title {
+  padding: 24px 0; }
+
+.commentlist li.comment {
+  border-bottom: 1px solid #e7e7e7;
+  line-height: 24px;
+  position: relative;
+  clear: both;
+  margin: 0 0 24px;
+  padding: 0 0 0 56px; }
+
+.commentlist li:last-child {
+  border-bottom: none;
+  margin-bottom: 0; }
+
+#comments .comment-body ul, #comments .comment-body ol {
+  margin-bottom: 18px; }
+
+#comments .comment-body p:last-child {
+  margin-bottom: 6px; }
+
+#comments .comment-body blockquote p:last-child {
+  margin-bottom: 24px; }
+
+.commentlist ol {
+  list-style: decimal; }
+
+.commentlist .avatar {
+  position: absolute;
+  top: 4px;
+  left: 0; }
+
+.comment-author cite {
+  color: #000000;
+  font-style: normal;
+  font-weight: 700; }
+
+.comment-author .says {
+  font-style: italic; }
+
+.comment-meta {
+  font-size: 12px;
+  margin: 0 0 5px; }
+  .comment-meta a:link, .comment-meta a:visited {
+    color: #888888;
+    text-decoration: none; }
+
+.reply {
+  font-size: 12px;
+  padding: 0 0 24px; }
+  .reply a {
+    color: #888888; }
+
+a.comment-edit-link {
+  color: #888888; }
+
+.commentlist .children li {
+  border: none;
+  margin: 0; }
+
+#comments .pingback {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e7e7e7; }
+
+.commentlist li.comment + li.pingback {
+  margin-top: -6px; }
+
+#comments .pingback p {
+  color: #888888;
+  font-size: 12px;
+  line-height: 18px;
+  display: block;
+  margin: 0; }
+
+#comments .pingback .url {
+  font-style: italic;
+  font-size: 13px; }
+
+input[type=submit] {
+  color: #333333; }
+
+#respond {
+  margin-top: 24px;
+  border-top: 1px solid #e7e7e7;
+  overflow: hidden;
+  position: relative; }
+  #respond .comment-notes {
+    margin-bottom: 1em; }
+
+.form-allowed-tags {
+  line-height: 1em; }
+
+.children #respond {
+  margin: 0 48px 0 0; }
+
+h3#reply-title {
+  margin: 18px 0; }
+
+#comments-list #respond {
+  margin: 0 0 18px; }
+
+#cancel-comment-reply-link {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400; }
+
+#respond .required {
+  color: #ff4b33;
+  font-weight: 700; }
+
+#respond label {
+  color: #888888;
+  font-size: 12px; }
+
+#respond input {
+  width: 98%;
+  margin: 0 0 9px; }
+
+#respond textarea {
+  width: 98%; }
+
+#respond dt {
+  color: #888888;
+  font-size: 12px;
+  line-height: 18px; }
+
+#respond dd {
+  color: #888888;
+  font-size: 12px;
+  line-height: 18px; }
+  #respond dd code {
+    font-size: 11px; }
+
+#respond .form-submit {
+  margin: 0 0 24px; }
+  #respond .form-submit input {
+    width: auto;
+    font-size: 14px; }
+
+#respond dl {
+  margin: 0 0 10px; }
+
+#respond dt {
+  display: inline;
+  font-weight: 400; }
+
+#respond dd {
+  display: inline; }
+
+p.form-allowed-tags, .nocomments {
+  display: none; }
+
+.commentlist {
+  list-style: none;
+  margin: 0; }
+  .commentlist .children {
+    list-style: none;
+    margin: 0; }
+
+.comment-meta a:active, .comment-meta a:hover {
+  color: #ff4b33; }
+
+.reply a:hover, a.comment-edit-link:hover {
+  color: #ff4b33; }
+
+#respond p, #comments-list ul #respond {
+  margin: 0; }
+
+footer {
+  clear: both; }
+
+/*
+====================================
+Default Styling
+====================================
+*/
+img {
+  max-width: 100%; }
+
+body {
+  color: #F6F6F6;
+  font-family: 'Proxima Nova Condensed', 'sans-serif';
+  font-weight: light;
+  font-size: 10px;
+  width: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.content {
+  float: left;
+  width: 65%;
+  margin-right: 5%; }
+
+.full {
+  width: 100%; }
