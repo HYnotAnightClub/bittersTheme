@@ -20,17 +20,18 @@ get_header();  ?>
     	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
     	$thumb_url = $thumb_url_array[0];
     	?>
-
-		<?php if ( $thumb_url_array[3] ): ?>
+		
+		<?php if ( has_post_thumbnail( $post_id ) ){ ?>
 			<div class="mainPost" style="background-image: url('<?php echo $thumb_url; ?>')">
-		      <h2><?php the_title(); ?></h2> <!-- add your styling here -->
+		      <h2><?php the_title(); ?></h2> 
 		      <?php the_content(); ?>
 			</div>	
-		<?php endif;?>
-			<div class="mainPost" style="background-image: url('<?php bloginfo('template_url'); ?>/images/barlights.jpg')"> <!-- change default background image -->
+		<?php } else {?>
+			<div class="mainPost" style="background-image: url('<?php bloginfo('template_url'); ?>/images/dark_wall.png')"> <!-- change default background image -->
 			      <h2><?php the_title(); ?></h2> <!-- add your styling here -->
 			      <?php the_content(); ?>
 			</div>	
+		<?php } ?>
 		
 	
 
@@ -38,6 +39,7 @@ get_header();  ?>
 		
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
+  <?php  dynamic_sidebar( 'body-widget-area' ); ?> <!-- instagram goes here -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
