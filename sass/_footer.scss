@@ -1,3 +1,20 @@
 footer {
 	background: #222;
+	padding: 2em;
+	p {
+		text-align: right;
+	}
+}
+ul.cnss-social-icon {
+	display: inline;
+}
+li.widget_cnss_widget {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}	
+li.widget_text {
+	list-style: none;
+	font-size: 2em;
+	margin-bottom: 2em;
 }

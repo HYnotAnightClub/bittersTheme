@@ -5,6 +5,7 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300|Quattrocento:400,700' rel='stylesheet' type='text/css'>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
   <?php // Load our CSS ?>

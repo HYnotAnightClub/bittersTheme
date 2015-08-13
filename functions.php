@@ -27,7 +27,6 @@ $defaults = array(
 	'admin-preview-callback' => ''
 	);
 	add_theme_support( 'custom-background', $defaults );
->>>>>>> d13dfdba1f37d84490c006def16edd5d47e87750
 	/* This theme uses post thumbnails (aka "featured images")
 	*  all images will be cropped to thumbnail size (below), as well as
 	*  a square size (also below). You can add more of your own crop
@@ -182,6 +181,15 @@ function hackeryou_widgets_init() {
 		'name' => 'Primary Widget Area',
 		'id' => 'primary-widget-area',
 		'description' => 'The primary widget area',
+		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+		'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+	register_sidebar( array(
+		'name' => 'Footer Widget Area',
+		'id' => 'footer-widget-area',
+		'description' => 'The footer widget area',
 		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 		'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
