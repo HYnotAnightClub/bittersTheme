@@ -8,28 +8,25 @@ a {
 }
 .nav-logo {
 	position: absolute;
-	top: 0;
-	left: 0;
 	padding: 2em;
-	h1 {
-		font-size: 25px;
-		a {
-			font-size: 25px;
-		}
+
+	img {
+		max-width: 150px;
+		max-height: 50px;
 	}
+
 }
 .navigation ul {
 	display: flex;
 	list-style: none;
-	font-weight: 100;
 	text-transform: uppercase;
-	letter-spacing: 2px;
 	margin: 0;
 	padding: 1.5em;
 	font-size: 1.8em;
-	justify-content: center;
+	justify-content: flex-end;
 }
 .navigation li a {
 	padding: 0.2em 0.7em;
 	color: #fff;
+	font-family: 'Oswald', sans-serif;
 }

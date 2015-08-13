@@ -9,6 +9,7 @@
 
 @import 'normalize';
 @import 'typography';
+@import 'navigation';
 @import 'header';
 @import 'sidebar';
 @import 'comments';
@@ -24,10 +25,12 @@ img {
 }
 body {
 	color: #F6F6F6;
-	font-family: 'Proxima Nova Condensed', 'sans-serif';
 	font-weight: light;
 	font-size: 10px;
 	width: 100%;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 100;
+	letter-spacing: 2px;
 }
 .container {
 	max-width: 1600px;
