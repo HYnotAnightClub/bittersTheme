@@ -13,7 +13,7 @@ function theme_setup() {
 	'width'         => 980, 
 	'flex-height'    => true,
 	// change the image height here for recommended stuff,
-	'height'        => 600,
+	'height'        => 500,
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 	);
 $defaults = array(
