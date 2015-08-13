@@ -41,11 +41,7 @@
     </nav> <!-- End of navigation bar -->
 <header class="hero">
 </div>
-    <!-- THIS IS THE CUSTOM IMAGE -->
-    <div class="customBackground" style="background-image: url(<?php header_image(); ?>)">
-      <!-- <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
-    </div>
-    <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
+  
 
   </div> <!-- End of container -->
 </header> <!-- End of header -->
