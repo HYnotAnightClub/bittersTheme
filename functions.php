@@ -6,6 +6,7 @@
 if ( ! function_exists( 'theme_setup' ) ):
 
 function theme_setup() {
+
 	$args = array(
 	'flex-width'    => true,
 	// change the image width here for recommended stuff
@@ -26,6 +27,7 @@ $defaults = array(
 	'admin-preview-callback' => ''
 	);
 	add_theme_support( 'custom-background', $defaults );
+>>>>>>> d13dfdba1f37d84490c006def16edd5d47e87750
 	/* This theme uses post thumbnails (aka "featured images")
 	*  all images will be cropped to thumbnail size (below), as well as
 	*  a square size (also below). You can add more of your own crop
@@ -300,3 +302,7 @@ function bitters_customize_register( $wp_customize ) {
 }
 
 add_action( 'customize_register', 'bitters_customize_register' );
+
+//custom stuff
+
+

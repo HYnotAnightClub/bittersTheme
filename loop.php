@@ -22,7 +22,7 @@
           <?php the_title(); ?>
         </a>
       </h2>
-
+			<?php echo the_post_thumbnail(); ?>
 			<section class="entry-content">
 				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
 				<?php wp_link_pages( array(
