@@ -15,6 +15,17 @@ function theme_setup() {
 	'height'        => 600,
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 	);
+$defaults = array(
+	'default-color'          => '',
+	'default-image'          => '',
+	'default-repeat'         => '',
+	'default-position-x'     => '',
+	'default-attachment'     => '',
+	'wp-head-callback'       => '_custom_background_cb',
+	'admin-head-callback'    => '',
+	'admin-preview-callback' => ''
+	);
+	add_theme_support( 'custom-background', $defaults );
 	/* This theme uses post thumbnails (aka "featured images")
 	*  all images will be cropped to thumbnail size (below), as well as
 	*  a square size (also below). You can add more of your own crop
