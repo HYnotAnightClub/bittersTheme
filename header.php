@@ -13,41 +13,43 @@
   <?php wp_head(); ?>
 </head>
 
+<!-- Start of Body Styles -->
 
 <body <?php body_class(); ?>>
-<!-- End of Nav Bar -->
-  <nav class="main-nav-bar">
-    <div class="nav-logo">
-      <!-- <div class="container"> -->
-        <?php if ( get_theme_mod( 'bitters_logo' ) ) : ?>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-           
-                  <img src="<?php echo get_theme_mod( 'bitters_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-                  <h1>
-                    <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-                      <?php bloginfo( 'name' ); ?>
-                    </a>
-                  </h1>
-          </a>
-          <?php else : ?>
-          <h1>
-            <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-              <?php bloginfo( 'name' ); ?>
+  <div class="container">
+    <nav class="main-nav-bar"> <!-- Start of navigation bar -->
+      <div class="nav-logo"> <!-- Start of customizable logo (top left corner) -->
+          <?php if ( get_theme_mod( 'bitters_logo' ) ) : ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">             
+              <img src="<?php echo get_theme_mod( 'bitters_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+              <h1>
+                <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+                  <?php bloginfo( 'name' ); ?>
+                </a>
+              </h1>
             </a>
-          </h1>
-        <?php endif; ?> 
-    </div>
-    <div class="navigation">
-      <?php  wp_nav_menu(array(
-        'container' => 'nav', 
-        'container_id' => 'nav',
-        'theme_location' => 'primary'
-      ));?>
-    </div>
-  </nav>
+            <?php else : ?> <!-- NEED TO FIGURE OUT HOW TO HIDE TEXT IF IMAGE ISNT PRESENT -->
+            <h1>
+              <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
+                <?php bloginfo( 'name' ); ?>
+              </a>
+            </h1>
+          <?php endif; ?> 
+      </div> <!-- End of customizable logo -->
+      <div class="navigation"> <!-- Start of customizable navigation -->
+        <?php  wp_nav_menu(array(
+          'container' => 'nav', 
+          'container_id' => 'nav',
+          'theme_location' => 'primary'
+        ));?>
+      </div> <!-- End of customizable navigation -->
+    </nav> <!-- End of navigation bar -->
 <header class="hero">
+</div>
     <!-- THIS IS THE CUSTOM IMAGE -->
     <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
-</header><!--/.header-->
+
+  </div> <!-- End of container -->
+</header> <!-- End of header -->
 
