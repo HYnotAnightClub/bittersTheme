@@ -1,20 +1,18 @@
 a {
-	color: #F6F6F6;
+	color: $ltGrey;
 	text-decoration: none;
 }
 .main-nav-bar {
-	background: #222;
+	background: $drkGrey;
 	margin: 0;
 }
 .nav-logo {
 	position: absolute;
-	padding: 2em;
-
+	padding: 2em 4em;
 	img {
 		max-width: 150px;
 		max-height: 50px;
 	}
-
 }
 .navigation ul {
 	display: flex;
@@ -24,9 +22,10 @@ a {
 	padding: 1.5em;
 	font-size: 1.8em;
 	justify-content: flex-end;
+	border-bottom: 2px solid $wt;
 }
 .navigation li a {
 	padding: 0.2em 0.7em;
-	color: #fff;
+	color: $wt;
 	font-family: 'Oswald', sans-serif;
 }
