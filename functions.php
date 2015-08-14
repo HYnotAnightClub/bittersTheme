@@ -215,6 +215,15 @@ function hackeryou_widgets_init() {
 		'before_title' => '',
 		'after_title' => '',
 	) );
+	register_sidebar( array(
+		'name' => 'menu-widget-area',
+		'id' => 'menu-widget-area',
+		'description' => 'The main page menu area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
