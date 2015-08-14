@@ -11,7 +11,9 @@ get_header();  ?>
 </div>
 <div class="blank"></div>
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
-    <?php  dynamic_sidebar( 'menu-widget-area' ); ?> <!-- custom menu goes here? -->
+    <!-- custom menu goes here? -->
+
+    <?php  dynamic_sidebar( 'menu-widget-area' ); ?> 
 <div class="main">
 
   <div class="container" >
@@ -23,7 +25,6 @@ get_header();  ?>
     	$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
     	$thumb_url = $thumb_url_array[0];
     	?>
-		
 		<?php if ( has_post_thumbnail( $post_id ) ){ ?>
 			<div class="mainPost" style="background-image: url('<?php echo $thumb_url; ?>')">
 				<div class="postText">
@@ -39,8 +40,6 @@ get_header();  ?>
 				</div>	
 			</div>
 		<?php } ?>
-		
-	<?php echo do_shortcode('[instagram-feed num=4]');  ?> 
 		
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->

@@ -5,7 +5,6 @@
 
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
           <h1 class="entry-title"><?php the_title(); ?></h1>
 
@@ -38,7 +37,7 @@
 
     </div> <!-- /.content -->
 
-    <?php get_sidebar(); ?>
+    <!-- <?php get_sidebar(); ?> -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->

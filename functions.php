@@ -216,9 +216,27 @@ function hackeryou_widgets_init() {
 		'after_title' => '',
 	) );
 	register_sidebar( array(
-		'name' => 'menu-widget-area',
-		'id' => 'menu-widget-area',
-		'description' => 'The main page menu area',
+		'name' => 'menu-column1',
+		'id' => 'menu-column1',
+		'description' => 'The first column for the drinks menu',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+		register_sidebar( array(
+		'name' => 'menu-column2',
+		'id' => 'menu-column2',
+		'description' => 'The second column for the drinks menu',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+			register_sidebar( array(
+		'name' => 'menu-column3',
+		'id' => 'menu-column3',
+		'description' => 'The third column menu area',
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '',
