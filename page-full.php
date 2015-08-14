@@ -10,6 +10,7 @@ get_header();  ?>
       <!-- <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
 </div>
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
+    <?php  dynamic_sidebar( 'menu-widget-area' ); ?> <!-- custom menu goes here? -->
 <div class="main">
   <div class="container" >
 
@@ -33,13 +34,13 @@ get_header();  ?>
 			</div>	
 		<?php } ?>
 		
-	
+	<?php echo do_shortcode('[instagram-feed num=4]');  ?> 
 
 		    
 		
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
-  <?php  dynamic_sidebar( 'body-widget-area' ); ?> <!-- instagram goes here -->
+  
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
