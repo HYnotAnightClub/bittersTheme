@@ -3,9 +3,9 @@
 <div class="main">
   <div class="container">
     <div class="content">
-
+      
       <?php if ( have_posts() ) the_post(); ?>
-
+      
       <h1>
         <?php if ( is_day() ) : ?>
           Daily Archives: <?php the_date(); ?>

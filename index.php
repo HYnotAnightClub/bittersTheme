@@ -6,11 +6,11 @@
 
     <div class="content">
     		<?php get_template_part( 'loop', 'index' );	?>
+    		<?php get_footer(); ?>
     </div> <!--/.content -->
-
-    <?php get_sidebar(); ?>
+	
+<!--     <?php get_sidebar(); ?> -->
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
-<?php get_footer(); ?>
