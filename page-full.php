@@ -9,9 +9,11 @@ get_header();  ?>
 <div class="custom-hero-image" style="background-image: url('<?php header_image(); ?>')">
       <!-- <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
 </div>
+<div class="blank"></div>
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
     <?php  dynamic_sidebar( 'menu-widget-area' ); ?> <!-- custom menu goes here? -->
 <div class="main">
+
   <div class="container" >
 
     <?php // Start the loop ?>
@@ -40,7 +42,9 @@ get_header();  ?>
 		
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
-  
+  <div class="blank"></div>
+  <?php  dynamic_sidebar( 'body-widget-area' ); ?> <!-- instagram goes here -->
+
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
