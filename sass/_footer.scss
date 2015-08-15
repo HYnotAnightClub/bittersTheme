@@ -1,8 +1,10 @@
 footer {
 	background: $drkGrey;
 	padding: 4em;
+	border-top: 2px solid $wt;
 	p {
 		text-align: right;
+		font-size: 1em;
 	}
 	a {
 		color: $ltGrey;

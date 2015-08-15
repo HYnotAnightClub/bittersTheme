@@ -187,16 +187,6 @@ function hackeryou_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-		'name' => 'Footer Widget Area',
-		'id' => 'footer-widget-area',
-		'description' => 'The footer widget area',
-		'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	register_sidebar( array(
 		'name' => 'footer-widget-area',
 		'id' => 'footer-widget-area',
 		'description' => 'The footer widget area',
@@ -207,8 +197,17 @@ function hackeryou_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => 'body-widget-area',
-		'id' => 'body-widget-area',
+		'name' => 'body-widget-area-top',
+		'id' => 'body-widget-area-1',
+		'description' => 'The main page widget area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+	register_sidebar( array(
+		'name' => 'body-widget-area-bottom',
+		'id' => 'body-widget-area-2',
 		'description' => 'The main page widget area',
 		'before_widget' => '',
 		'after_widget' => '',

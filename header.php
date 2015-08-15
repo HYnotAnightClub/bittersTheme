@@ -9,8 +9,8 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
   <?php // Load our CSS ?>
-  <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <?php wp_head(); ?>
+  <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 </head>
 
 <!-- Start of Body Styles -->
