@@ -45,10 +45,10 @@ get_header();  ?>
   	  $thumb_url = $thumb_url_array[0];
     ?>
     	<?php if ( has_post_thumbnail( $post_id ) ){ ?>
-    		<div class="menu-bottom-image" style="background-image: url('<?php echo $thumb_url; ?>')">
+    		<div class="bottom-image" style="background-image: url('<?php echo $thumb_url; ?>')">
     		</div>	
     	<?php } else {?>
-    		<div class="menu-bottom-image" style="background-image: url('<?php bloginfo('template_url'); ?>/images/dark_wall.png')"> <!-- change default background image -->
+    		<div class="bottom-image" style="background-image: url('<?php bloginfo('template_url'); ?>/images/dark_wall.png')"> <!-- change default background image -->
     		</div>
     	<?php } ?>
     <!-- end custom image -->	
