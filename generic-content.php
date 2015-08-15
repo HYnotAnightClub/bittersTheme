@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Template Name: generic content - no header image
+	Template Name: info page
 */
 
 get_header();  ?>
@@ -36,7 +36,7 @@ get_header();  ?>
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
   <div class="contact-form">
-  	<?php echo do_shortcode('[contact-form-7 id="72" title="Reservations / Inquiries"]') ?> <!-- contact form goes here -->
+  	<?php  dynamic_sidebar( 'contact-form-section' ); ?> 
   </div>
 </div> <!-- /.main -->
 
