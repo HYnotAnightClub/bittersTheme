@@ -1,10 +1,30 @@
 .custom-hero-image {
+	position: relative;
 	height: 500px;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
 	background-size: cover;
+
+	//convenience styles for floating title on header image
+	.site-title{
+		position: absolute;
+		top: 50%;
+		right: 50%;
+	}
+	//convenience styles for floating title on header image
+	.site-description{
+		position: absolute;
+		top: 55%;
+		right: 47%;
+	}
+	//end convenience styles for floating title on header image
 }
+
+
+
+
+
 .blank {
 	background-color: $ltGrey;
 	height: 10em;
