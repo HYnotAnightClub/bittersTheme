@@ -29,7 +29,8 @@
 				      </h2>
 							<?php echo the_post_thumbnail(); ?>
 							<section class="entry-content">
-								<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
+								<?php the_excerpt(); ?>
+								
 								<?php wp_link_pages( array(
 				          'before' => '<div class="page-link"> Pages:',
 				          'after' => '</div>'
@@ -54,7 +55,7 @@
 					      </h2>
 								<?php echo the_post_thumbnail(); ?>
 								<section class="entry-content">
-									<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
+									<?php the_excerpt(); ?>
 									<?php wp_link_pages( array(
 					          'before' => '<div class="page-link"> Pages:',
 					          'after' => '</div>'

@@ -40,6 +40,20 @@ get_header();  ?>
     	</div>
     	<!-- end of custom menu area -->
   </div> <!-- /.container -->
+  <!-- custom image -->
+	  <?php 
+		  $thumb_id = get_post_thumbnail_id();
+		  $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+		  $thumb_url = $thumb_url_array[0];
+	  ?>
+	  	<?php if ( has_post_thumbnail( $post_id ) ){ ?>
+	  		<div class="menu-bottom-image" style="background-image: url('<?php echo $thumb_url; ?>')">
+	  		</div>	
+	  	<?php } else {?>
+	  		<div class="menu-bottom-image" style="background-image: url('<?php bloginfo('template_url'); ?>/images/dark_wall.png')"> <!-- change default background image -->
+	  		</div>
+	  	<?php } ?>
+  	<!-- end custom image -->
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
