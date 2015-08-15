@@ -1,3 +1,28 @@
 .entry-title {
 	@include title-font;
 }
+
+.right-side-post,
+.left-side-post {
+	width: 70%;
+	padding: 5%;
+	margin: 2%;
+}
+.right-side-post {
+	background: $wt;
+	color: $drkGrey;
+	float: right;
+	a {
+		color: $drkGrey;
+		&:hover,
+		&:focus {
+			color: $accent;
+		}
+	}
+}
+.left-side-post {
+	background: url(images/dark_wall.png);
+	color: $wt;
+	float: left;
+	border: 2px solid $wt;
+}
