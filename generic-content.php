@@ -35,9 +35,7 @@ get_header();  ?>
 		
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
-  
-  maybe put 
-
+  <?php echo do_shortcode('[contact-form-7 id="72" title="Reservations / Inquiries"]') ?>
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

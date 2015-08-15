@@ -43,7 +43,7 @@ get_header();  ?>
 		
     <?php endwhile; // end the loop?>
   </div> <!-- /.container -->
-  <div class="blank"></div>
+ 
   <?php  dynamic_sidebar( 'body-widget-area' ); ?> <!-- instagram goes here -->
 
 </div> <!-- /.main -->
