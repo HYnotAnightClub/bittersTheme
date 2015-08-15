@@ -5,7 +5,6 @@
 */
 
 get_header();  ?>
-
 <div class="main">
 
   <div class="container" >

@@ -232,10 +232,19 @@ function hackeryou_widgets_init() {
 		'before_title' => '',
 		'after_title' => '',
 	) );
-			register_sidebar( array(
+		register_sidebar( array(
 		'name' => 'menu-column3',
 		'id' => 'menu-column3',
 		'description' => 'The third column menu area',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
+	) );
+		register_sidebar( array(
+		'name' => 'contact-form-section',
+		'id' => 'contact-form-section',
+		'description' => 'contact form area',
 		'before_widget' => '',
 		'after_widget' => '',
 		'before_title' => '',
