@@ -13,11 +13,9 @@ get_header();  ?>
 
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
     <!-- custom menu goes here? -->
-
-    <?php  dynamic_sidebar( 'menu-widget-area' ); ?> 
+<?php  dynamic_sidebar( 'menu-widget-area' ); ?> 
 <div class="main">
-
-  <div class="container" >
+	<div class="container" >
 
     <?php // Start the loop ?>
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -43,10 +41,10 @@ get_header();  ?>
 		<?php } ?>
     <?php endwhile; // end the loop?>
 		
+	<div class="blank"></div>
 	<?php echo do_shortcode('[instagram-feed num=7 imagepadding=0 showheader=false showbutton=false showfollow=false]');  ?>  <!--- Instagram feed widget -->
 
   </div> <!-- /.container -->
-  <div class="blank"></div>
   <?php  dynamic_sidebar( 'body-widget-area' ); ?>
 
 </div> <!-- /.main -->
