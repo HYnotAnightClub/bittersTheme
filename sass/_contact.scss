@@ -1,11 +1,12 @@
 .contact-post-text {
+	padding: 5%;
 	h2 {
 		@include header-font;
-		padding: 5% 20%;
 	}
 }
 form.wpcf7-form {
-	padding: 0% 20% 10% 20%;
+	width: 90em;
+	padding: 2% 5%;
 	.wpcf7-form-control {
 		width: 100%;
 		padding: .5em;
