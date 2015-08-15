@@ -38,5 +38,4 @@ get_header();  ?>
         </div>
       <?php } ?>
     <!-- end custom image --> 
-<?php get_sidebar(); ?> <!--- Prevents content from overflowing container -->
 <?php get_footer(); ?>

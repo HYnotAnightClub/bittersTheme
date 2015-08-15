@@ -3,7 +3,7 @@
 
 <div class="main">
   <div class="container">
-
+	
     <div class="content">
     		<?php get_template_part( 'loop', 'index' );	?>
     		<?php get_footer(); ?>
