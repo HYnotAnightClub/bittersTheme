@@ -5,10 +5,15 @@
 */
 
 get_header();  ?>
+<!-- this is where the custom title goes -->
+
   <!-- THIS IS THE CUSTOM IMAGE -->
-<div class="custom-hero-image" style="background-image: url('<?php header_image(); ?>')">
-      <!-- <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
-</div>
+	<div class="custom-hero-image" style="background-image: url('<?php header_image(); ?>')">
+		<div class="site-title"> <?php echo bloginfo( 'name' ); ?> </div>
+		<div class="site-description"> <?php echo bloginfo( 'description' ); ?> </div>
+	      <!-- <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
+	</div>
+
 <div class="blank"></div>
 
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
@@ -46,7 +51,6 @@ get_header();  ?>
 
   </div> <!-- /.container -->
   <?php  dynamic_sidebar( 'body-widget-area' ); ?>
-
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
