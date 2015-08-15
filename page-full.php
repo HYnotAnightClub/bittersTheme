@@ -14,11 +14,9 @@ get_header();  ?>
 	      <!-- <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" /> -->
 	</div>
 
-<div class="blank"></div>
-
     <!-- THIS IS THE CUSTOM IMAGE GOING AWAY -->
     <!-- custom menu goes here? -->
-<?php  dynamic_sidebar( 'menu-widget-area' ); ?> 
+<?php  dynamic_sidebar( 'body-widget-area-1' ); ?> 
 <div class="main">
 	<div class="container" >
 
@@ -39,18 +37,16 @@ get_header();  ?>
 		<?php } else {?>
 			<div class="mainPost" style="background-image: url('<?php bloginfo('template_url'); ?>/images/dark_wall.png')"> <!-- change default background image -->
 				<div class="postText">
-			      <h2><?php the_title(); ?></h2> <!-- add your styling here -->
+			      <h2><?php the_title(); ?></h2>
 			      <?php the_content(); ?>
 				</div>	
 			</div>
 		<?php } ?>
     <?php endwhile; // end the loop?>
-		
-	<div class="blank"></div>
+	<?php  dynamic_sidebar( 'body-widget-area-2' ); ?> 	
 	<?php echo do_shortcode('[instagram-feed num=7 imagepadding=0 showheader=false showbutton=false showfollow=false]');  ?>  <!--- Instagram feed widget -->
 
   </div> <!-- /.container -->
-  <?php  dynamic_sidebar( 'body-widget-area' ); ?>
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>

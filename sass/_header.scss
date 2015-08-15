@@ -1,43 +1,38 @@
 .custom-hero-image {
 	position: relative;
-	height: 500px;
+	height: 450px;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
 	background-size: cover;
+	padding: 10% 15%;
 
 	//convenience styles for floating title on header image
 	.site-title{
-		position: absolute;
-		top: 50%;
-		right: 50%;
+		@include title-font;
+		font-size: 8em;
+		font-weight: 400;
+		letter-spacing: 0.2em;
 	}
 	//convenience styles for floating title on header image
 	.site-description{
-		position: absolute;
-		top: 55%;
-		right: 47%;
+		@include title-font;
 	}
 	//end convenience styles for floating title on header image
 }
-
-
-
-
-
 .blank {
-	background-color: $ltGrey;
-	height: 10em;
+	height: 20em;
 }
 .mainPost {
 	padding: 4em 0;
 	background-size: cover;
+	margin: 15em 0;
 	.postText {
 		background: $ltGrey;
 		padding: 2em;
 		width: 50%;
-		color: $drkGrey;
-		margin: 0 4em;
+		color: #222;
+		margin: 0 10%;
 		h2 {
 			text-transform: uppercase;
 			font-size: 2em;
