@@ -20,13 +20,17 @@
 	}
 	//end convenience styles for floating title on header image
 }
-.blank {
-	height: 20em;
+.textwidget {
+	padding: 10% 20%;
+	list-style: none;
+	font-size: 2em;
+	letter-spacing: 2px;
+	text-align: center;
+	background: url(images/dark_wall.png);
 }
 .mainPost {
 	padding: 4em 0;
 	background-size: cover;
-	margin: 15em 0;
 	.postText {
 		background: $ltGrey;
 		padding: 2em;
@@ -34,8 +38,7 @@
 		color: #222;
 		margin: 0 10%;
 		h2 {
-			text-transform: uppercase;
-			font-size: 2em;
+			@include bold-font;
 		}
 		p {
 			font-family: 'Quattrocento', serif;

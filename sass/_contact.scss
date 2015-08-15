@@ -1,0 +1,25 @@
+.contact-post-text {
+	h2 {
+		@include title-font;
+		padding: 5% 20%;
+	}
+}
+form.wpcf7-form {
+	padding: 0% 20% 10% 20%;
+	.wpcf7-form-control {
+		width: 100%;
+		padding: .5em;
+		border-radius: 3px;
+		background: $ltGrey;
+		border: none;
+	}
+	.wpcf7-submit {
+		width: 10em;
+		@include title-font;
+		font-size: 1.2em;
+		&:hover,
+		&:focus {
+			background: $accent;
+		}
+	}
+}

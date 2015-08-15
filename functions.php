@@ -92,10 +92,8 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
-
   wp_register_script('my_stylesheet', plugins_url('get_stylesheet_directory_uri()', style.css ));
   wp_enqueue_script('my_stylesheet');
-
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );

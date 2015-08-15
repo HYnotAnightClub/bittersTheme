@@ -16,6 +16,7 @@
 @import 'drink-list';
 @import 'events';
 @import 'comments';
+@import 'contact';
 @import 'footer';
 /*
 ====================================
@@ -42,11 +43,11 @@ body {
 	margin: 0;
 }
 
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
-}
+// .content {
+// 	float: left;
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
 
 .full {
 	width: 100%;
