@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Template Name: Drink or food list! (three columns)
+	Template Name: Menu Template (three columns)
 */
 
 get_header();  ?>

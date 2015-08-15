@@ -14,7 +14,9 @@
 }
 .fdm-item-panel {
 	margin-bottom: 2em;
-	.fdm-item-title,
+	.fdm-item-title {
+		@include title-font;
+	}
 	.fdm-item-price {
 		@include bold-font;
 	}
