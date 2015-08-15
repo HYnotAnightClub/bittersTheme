@@ -9,6 +9,11 @@ footer {
 	a {
 		color: $ltGrey;
 	}
+	.textwidget {
+		@include title-font;
+		padding: 0 10%;
+		text-align: left;
+	}
 }
 ul.cnss-social-icon {
 	display: inline;
@@ -16,9 +21,3 @@ ul.cnss-social-icon {
 	display: flex;
 	justify-content: flex-end;
 }	
-.textwidget {
-	list-style: none;
-	font-size: 2em;
-	margin-bottom: 2em;
-	letter-spacing: 2px;
-}

@@ -20,13 +20,16 @@
 	}
 	//end convenience styles for floating title on header image
 }
-.blank {
-	height: 20em;
+.textwidget {
+	padding: 10% 20%;
+	list-style: none;
+	font-size: 2em;
+	letter-spacing: 2px;
+	text-align: center;
 }
 .mainPost {
 	padding: 4em 0;
 	background-size: cover;
-	margin: 15em 0;
 	.postText {
 		background: $ltGrey;
 		padding: 2em;
