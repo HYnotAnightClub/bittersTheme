@@ -44,8 +44,9 @@ get_header();  ?>
 		<?php } ?>
     <?php endwhile; // end the loop?>
 	<?php  dynamic_sidebar( 'body-widget-area-2' ); ?> 	
-	<?php echo do_shortcode('[instagram-feed num=7 imagepadding=0 showheader=false showbutton=false showfollow=false]');  ?>  <!--- Instagram feed widget -->
-
+	<div class="testflex">
+		<?php echo do_shortcode('[instagram-feed class=feed-one imagepadding=0 showheader=false showbutton=false showfollow=false]');  ?>  <!--- Instagram feed widget -->
+	</div>
   </div> <!-- /.container -->
 </div> <!-- /.main -->
 
