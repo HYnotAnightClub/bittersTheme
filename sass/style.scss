@@ -12,7 +12,7 @@
 @import 'typography';
 @import 'navigation';
 @import 'header';
-@import 'sidebar';
+@import 'drink-list';
 @import 'comments';
 @import 'footer';
 /*
@@ -31,9 +31,9 @@ body {
 	width: 100%;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 100;
-	letter-spacing: 2px;
 }
 .container {
+	background: $drkGrey;
 	max-width: 1600px;
 	width: 100%;
 	margin: 0;

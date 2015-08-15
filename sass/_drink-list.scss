@@ -1,0 +1,26 @@
+.drink-list {
+	display: flex;
+	flex-wrap: wrap;
+	.left-column,
+	.middle-column,
+	.right-column {
+		width: 33%;
+		padding: 5%;
+	}
+}
+media="all" {
+	font-weight: 100;
+}
+.fdm-item-panel {
+	margin-bottom: 2em;
+	font-weight: 100;
+	.fdm-item-title,
+	.fdm-item-price {
+		font-family: 'Oswald', sans-serif;   
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+	.fdm-item-price {
+		font-size: 1.5em;
+	}	
+}
