@@ -1,5 +1,4 @@
 <?php // If there are no posts to display, such as an empty archive page ?>
-
 <?php if ( ! have_posts() ) : ?>
 
 	<article id="post-0" class="post error404 not-found">
@@ -35,13 +34,6 @@
 				          'after' => '</div>'
 				        )); ?>
 							</section><!-- .entry-content -->
-
-							<footer>
-								<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-				        <p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-				        <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
-							</footer>
-
 						</article><!-- #post-## -->
 					</div>
 				<?php } else {?>
@@ -60,13 +52,6 @@
 					          'after' => '</div>'
 					        )); ?>
 								</section><!-- .entry-content -->
-
-								<footer>
-									<p><?php the_tags('Tags: ', ', ', '<br>'); ?> Posted in <?php the_category(', '); ?></p>
-					        <p><?php comments_popup_link('Respond to this post &raquo;', '1 Response &raquo;', '% Responses &raquo;'); ?></p>
-					        <p><?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
-								</footer>
-
 							</article><!-- #post-## -->
 					</div>		
 				<?php } ?>
