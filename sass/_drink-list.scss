@@ -1,5 +1,5 @@
 .menu-description {
-	@include title-font;
+	@include bold-font;
 	padding: 2% 5%;
 }
 .drink-list {
@@ -16,9 +16,16 @@
 	margin-bottom: 2em;
 	.fdm-item-title,
 	.fdm-item-price {
-		@include title-font;
+		@include bold-font;
 	}
 	.fdm-item-price {
 		font-size: 1.5em;
 	}	
+}
+.menu-bottom-image {
+	height: 400px;
+	width: 100%;
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
 }

@@ -11,8 +11,9 @@ footer {
 	}
 	.textwidget {
 		@include title-font;
-		padding: 0 10%;
+		padding: 0 5%;
 		text-align: left;
+		background: $drkGrey;
 	}
 }
 ul.cnss-social-icon {
