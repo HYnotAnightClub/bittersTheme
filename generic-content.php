@@ -38,5 +38,5 @@ get_header();  ?>
         </div>
       <?php } ?>
     <!-- end custom image --> 
-
+	
 <?php get_footer(); ?>
