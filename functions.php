@@ -92,6 +92,10 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+  wp_register_script('my_stylesheet', plugins_url('get_stylesheet_directory_uri()', style.css ));
+  wp_enqueue_script('my_stylesheet');
+
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts' );
@@ -366,5 +370,10 @@ function bitters_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'bitters_customize_register' );
 
 //custom stuff
+//dequeue css from plugins
+add_action('wp_print_styles', 'mytheme_dequeue_css_from_plugins', 100);
+function mytheme_dequeue_css_from_plugins()  {
+	wp_dequeue_style( "'/views/Base.class.php'" ); 
+}
 
 
