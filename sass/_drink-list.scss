@@ -10,19 +10,25 @@
 	.right-column {
 		width: 33%;
 		padding: 5%;
+		@media all and (max-width: 700px) {
+			width: 100%;
+		}
 	}
 }
 .fdm-item-panel {
 	margin-bottom: 2em;
 	.fdm-item-title {
 		@include title-font;
+		@media all and (max-width: 950px) {	
+			font-size: 1.5em;
+		}
 	}
 	.fdm-item-price {
 		@include bold-font;
 	}
 	.fdm-item-price {
 		font-size: 1.5em;
-	}	
+	}
 }
 .menu-bottom-image {
 	height: 400px;
@@ -30,4 +36,7 @@
 	background-repeat: none;
 	background-size: cover;
 	background-position: center;
+	@media all and (max-width: 550px) {
+		height: 200px;
+	}
 }

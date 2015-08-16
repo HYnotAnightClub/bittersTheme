@@ -9,6 +9,9 @@ a {
 .nav-logo {
 	position: absolute;
 	padding: 2em 7em;
+	@media all and (max-width: 700px) {
+		padding: 2.5em;
+	}
 	img {
 		max-width: 150px;
 		max-height: 50px;
@@ -17,15 +20,28 @@ a {
 .navigation ul {
 	display: flex;
 	list-style: none;
-	text-transform: uppercase;
 	margin: 0;
-	padding: 1.5em;
-	font-size: 1.8em;
+	padding: 2.5em;
 	justify-content: flex-end;
 	border-bottom: 2px solid $wt;
+	@media all and (max-width: 700px) {
+		display: block;
+		text-align: right;
+	}
+	@media all and (max-width: 550px) {
+		padding: 1.5em;
+	}
 }
 .navigation li a {
 	padding: 0.2em 0.7em;
 	color: $wt;
-	font-family: 'Oswald', sans-serif;
+	@include title-font;
+	&:hover,
+	&:focus {
+		color: $accent;
+	}
+	@media all and (max-width: 700px) {
+		font-size: 1.4em;
+		padding: 0.2em;
+	}
 }

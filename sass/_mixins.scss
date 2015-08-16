@@ -3,6 +3,7 @@
 	text-transform: uppercase;
 	font-size: 2em;
 	font-weight: 100;
+	letter-spacing: 2px;
 }
 @mixin bold-font {
 	font-family: 'Oswald', sans-serif;
@@ -17,4 +18,17 @@
 	font-size: 2.5em;
 	font-weight: bold;
 	letter-spacing: 2px;
+}
+@mixin btn {
+	width: 10em;
+	@include title-font;
+	font-size: 1.2em;
+	padding: .5em;
+	border-radius: 3px;
+	background: #F6F6F6;
+	border: none;
+	&:hover,
+	&:focus {
+		background: $accent;
+	}
 }
