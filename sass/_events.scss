@@ -1,17 +1,30 @@
 .entry-title {
 	@include title-font;
 }
-
 .right-side-post,
 .left-side-post {
 	width: 70%;
 	padding: 5%;
-	margin: 2%;
+	margin: 2.5% 5%;
+	@media all and (max-width: 550px) {
+		width: 90%;
+		margin: 10% 5%;
+		padding: 2.5% 5%;
+	}
+	&:hover,
+	&:focus {
+		border: none;
+		border: 4px solid $accent;
+	}
 }
 .right-side-post {
 	background: $wt;
 	color: $drkGrey;
 	float: right;
+	border: 4px solid $wt;
+	@media all and (max-width: 550px) {
+		float: none;
+	}
 	a {
 		color: $drkGrey;
 		&:hover,
@@ -24,5 +37,52 @@
 	background: url(images/dark_wall.png);
 	color: $wt;
 	float: left;
-	border: 2px solid $wt;
+	border: 4px solid $wt;
+	@media all and (max-width: 550px) {
+		float: none;
+	}
+}
+// Click through to full post below
+
+.type-post {
+	padding: 2% 5%;
+	.entry-title {
+		@include header-font;
+	}
+	.entry-meta {
+		@include title-font;
+	}
+	.entry-utility {
+		display: none;
+	}
+	.entry-content {
+		padding-top: 2%;
+	}
+}
+#nav-below {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 5%;
+	p.nav-previous,
+	p.nav-next {
+		@include title-font;
+	}
+}
+#respond {
+	padding: 5%;
+	.comment-reply-title {
+		@include title-font;
+		color: $wt;
+	}
+	textarea {
+		padding: .5em;
+		border-radius: 3px;
+		background: #F6F6F6;
+		border: none;
+		width: 60%;
+		margin-bottom: 2%;
+	}
+	#submit {
+		@include btn;
+	}
 }

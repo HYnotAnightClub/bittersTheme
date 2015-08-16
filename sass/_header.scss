@@ -6,17 +6,33 @@
 	width: 100%;
 	background-size: cover;
 	padding: 10% 15%;
-
+	@media all and (max-width: 700px) {
+		height: 350px;
+		@media all and (max-width: 550px) {
+			height: 250px;
+		}
+		@media all and (max-width: 400px) {
+			height: 200px;
+		}
+	}
 	//convenience styles for floating title on header image
 	.site-title{
 		@include title-font;
 		font-size: 8em;
 		font-weight: 400;
 		letter-spacing: 0.2em;
+		text-shadow: 2px 2px #333;
+		@media all and (max-width: 550px) {
+			font-size: 6em;
+		}
+		@media all and (max-width: 400px) {
+			font-size: 4.5em;
+		}
 	}
 	//convenience styles for floating title on header image
 	.site-description{
 		@include title-font;
+		text-shadow: 2px 2px #333;
 	}
 	//end convenience styles for floating title on header image
 }
@@ -24,16 +40,21 @@
 	padding: 10% 20%;
 	list-style: none;
 	font-size: 2em;
+	line-height: 1.7em;
 	letter-spacing: 2px;
 	text-align: center;
 	background: url(images/dark_wall.png);
+	@media all and (max-width: 700px) {
+		padding: 10%;
+		font-size: 1.7em;
+	}
 }
 .mainPost {
 	padding: 4em 0;
 	background-size: cover;
 	.postText {
 		background: $ltGrey;
-		padding: 2em;
+		padding: 5%;
 		width: 50%;
 		color: #222;
 		margin: 0 10%;
@@ -45,14 +66,23 @@
 			font-size: 1.7em;
 			letter-spacing: 0;
 		}
+		@media all and (max-width: 950px) {
+			width: 80%;
+		}
 	}
 }
-
-
 #sbi_images {
 	display: flex;
+	@media all and (max-width: 550px) {
+		flex-wrap: wrap;
+	}
+	.sbi_item {
+		@media all and (max-width: 550px) {
+			width: 25%;
+		}	
+	}
 }
 #sbi_load {
-	padding-top: 0;
+	padding-top: 0!important;
 }
 

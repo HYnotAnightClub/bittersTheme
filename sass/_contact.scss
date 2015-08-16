@@ -5,8 +5,13 @@
 	}
 }
 form.wpcf7-form {
-	width: 90em;
-	padding: 2% 5%;
+	width: 70em;
+	@media all and (max-width: 900px) {
+		width: 90%;
+	}
+	@media all and (max-width: 550px) {
+		width: 100%;
+	}
 	.wpcf7-form-control {
 		width: 100%;
 		padding: .5em;
@@ -15,12 +20,13 @@ form.wpcf7-form {
 		border: none;
 	}
 	.wpcf7-submit {
-		width: 10em;
-		@include title-font;
-		font-size: 1.2em;
-		&:hover,
-		&:focus {
-			background: $accent;
-		}
+		@include btn;
+	}
+}
+.contact-post-text {
+	padding: 2% 5%;
+	h2 {
+		@include bold-font;
+		font-size: 3em;
 	}
 }
